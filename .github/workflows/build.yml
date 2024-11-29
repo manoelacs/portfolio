@@ -35,8 +35,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     permissions:
-      contents: read
-      pages: write
+      contents: write
     
     if: github.ref == 'refs/heads/master'
 
