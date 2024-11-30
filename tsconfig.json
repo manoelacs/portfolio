@@ -6,15 +6,18 @@
     "moduleResolution": "Node",
     "baseUrl": "./",
     "paths": {
-      "@components/*": [
-        "src/components/*"
+      "@atoms/*": [
+        "src/atoms/*"
       ],
       "@styles/*": [
         "src/styles/*"
       ],
       "@static/*": [
         "src/static/*"
-      ]
+      ],
+      "@src/*": [
+        "src/*"
+      ], // Add this line
     },
     "allowJs": true,
     "skipLibCheck": true,
