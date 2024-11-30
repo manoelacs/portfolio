@@ -23,7 +23,9 @@ export default {
         primary: '#1a202c', // Example primary color
         secondary: '#2d3748', // Example secondary color
         accent: '#ff9c1a', // Example accent color
-        background: '#EBF2FA', // Example background color
+        background: '#F2F7FC', // Example background color
+        'theme-background': '#EBF2FA',
+
         text: '#2d3748', // Example text color
         'custom-red': '#EC1B09', // New custom color
         'card-accent': '#FFEBD1',
@@ -36,7 +38,9 @@ export default {
         'dark-primary': '#121212',
         'dark-secondary': '#1e1e1e',
         'dark-accent': '#bb86fc',
-        'dark-background': '#121212',
+        'dark-background': '#333',
+        'dark-theme-background': '#2c2c2c',
+
         'dark-text': '#e0e0e0',
         'dark-card-background': '#1e1e1e',
         'dark-tag-background': '#2c2c2c',

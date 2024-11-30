@@ -1,0 +1,11 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path id="Vector" d="M10 15.8333C13.2215 15.8333 15.8333 13.2215 15.8333 10C15.8333 6.77854 13.2215 4.16667 10 4.16667C6.77854 4.16667 4.16667 6.77854 4.16667 10C4.16667 13.2215 6.77854 15.8333 10 15.8333Z" fill="#FFD700"/>
+  <path id="Vector" d="M10 1.66667V3.33333" stroke="#FFD700" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  <path id="Vector" d="M10 16.6667V18.3333" stroke="#FFD700" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  <path id="Vector" d="M3.33333 10H1.66667" stroke="#FFD700" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  <path id="Vector" d="M18.3333 10H16.6667" stroke="#FFD700" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  <path id="Vector" d="M4.92499 4.92499L3.74999 3.74999" stroke="#FFD700" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  <path id="Vector" d="M16.25 16.25L15.075 15.075" stroke="#FFD700" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  <path id="Vector" d="M4.92499 15.075L3.74999 16.25" stroke="#FFD700" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+  <path id="Vector" d="M16.25 3.74999L15.075 4.92499" stroke="#FFD700" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>

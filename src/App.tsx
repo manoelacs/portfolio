@@ -1,18 +1,15 @@
 import React from 'react';
 import './App.css';
-import Home from './components/home';
-import About from './components/about';
-import Projects from './components/projects';
-import Contact from './components/contact';
-import Footer from './components/footer';
+import Header from './molecules/header';
+
+import { Footer } from './atoms/footer';
+import { PageLayout } from './organisms/pageLayout';
 
 const App: React.FC = () => {
   return (
-    <div className='font-sans'>
-      <Home />
-      <About />
-      <Projects />
-      <Contact />
+    <div className='flex flex-col items-center h-full gap-y-4 w-[1230px] bg-background dark:bg-dark-background'>
+      <Header />
+      <PageLayout />
       <Footer />
     </div>
   );

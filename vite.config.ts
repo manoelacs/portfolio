@@ -6,12 +6,12 @@ import path from 'path';
 const { VITE_PORT } = loadEnv('development', process.cwd());
 
 // https://vite.dev/config/
-export default defineConfig({  
+export default defineConfig({
   base: '/portfolio/',
   plugins: [react(), svgr()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@src': path.resolve(__dirname, './src'),
     },
   },
   server: {
