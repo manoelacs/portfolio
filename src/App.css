@@ -4,13 +4,12 @@
   padding: 2rem;
   text-align: center;
   height: fit-content;
-  background-color: #f2f7fc;
+  background-color: #f2f5f9;
   display: flex;
   justify-content: center;
 }
-.dark {
+.darkTheme {
   #root {
-    background-color: #333;
-    color: #fff;
+    background-color: #1a1a1a;
   }
 }

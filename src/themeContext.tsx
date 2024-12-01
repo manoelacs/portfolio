@@ -16,14 +16,23 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 export const ThemeProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('lightTheme');
 
   useEffect(() => {
-    document.documentElement.classList.toggle('dark', theme === 'dark');
+    console.log('theme', theme);
+    if (theme === 'darkTheme') {
+      document.documentElement.classList.add('darkTheme');
+      document.documentElement.classList.remove('lightTheme');
+    } else {
+      document.documentElement.classList.add('lightTheme');
+      document.documentElement.classList.remove('darkTheme');
+    }
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+    setTheme((prevTheme) =>
+      prevTheme === 'lightTheme' ? 'darkTheme' : 'lightTheme'
+    );
   };
 
   return (
