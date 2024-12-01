@@ -6,11 +6,11 @@ import { useTheme } from '../themeContext';
 export const ThemeButton: React.FC = () => {
   const { toggleTheme, theme } = useTheme();
 
-  const themeIcon = theme === 'light' ? <DarkIcon /> : <LightIcon />;
+  const themeIcon = theme === 'lightTheme' ? <DarkIcon /> : <LightIcon />;
 
   return (
     <div
-      className='w-14 h-14 p-2.5 bg-theme-background dark:bg-dark-theme-background cursor-pointer rounded-3xl shadow flex-col justify-center items-center gap-2.5 inline-flex'
+      className='w-14 h-14 p-2.5 bg-background darkTheme:bg-card-foreground cursor-pointer rounded-3xl shadow flex-col justify-center items-center gap-2.5 inline-flex'
       onClick={toggleTheme}>
       {themeIcon}
     </div>

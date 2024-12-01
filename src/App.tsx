@@ -7,7 +7,7 @@ import { PageLayout } from './organisms/pageLayout';
 
 const App: React.FC = () => {
   return (
-    <div className='flex flex-col items-center h-full gap-y-4 w-[1230px] bg-background dark:bg-dark-background'>
+    <div className='flex flex-col items-center h-full gap-y-4 w-[1230px] bg-background'>
       <Header />
       <PageLayout />
       <Footer />
