@@ -23,7 +23,7 @@ export const Menu = () => {
         isActive={false}
       />
       <MenuItem
-        title='Word'
+        title='Work'
         icon={<WorkIcon className={className} />}
         onClick={() => console.log('work clicked')}
         isActive={false}

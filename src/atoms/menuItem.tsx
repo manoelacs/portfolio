@@ -11,7 +11,7 @@ export const MenuItem = ({ title, icon, onClick, isActive }: MenuItemProps) => {
     'bg-gradient-to-r from-figma-orange to-figma-redOrange [&_path]:fill-white text-white';
 
   const inactiveItem =
-    'bg-primary hover:bg-card group-hover:darkTheme:[&_path]:fill-white group-hover:darkTheme:bg-card';
+    'bg-primary hover:bg-figma-background hover:text-foreground  [&_path]:fill-foreground ';
 
   const containerClassName = `w-20 [&_path]:fill-opacity-1 h-20 rounded-2xl flex flex-col p-4 gap-y-1 items-center justify-center group 
         ${isActive ? activeItem : inactiveItem}`;
