@@ -12,11 +12,13 @@ export const AboutMeCard = ({
   icon: JSX.Element;
 }) => {
   const containerStyle =
-    style === 'primary' ? 'bg-figma-orangeLight' : 'bg-background';
+    style === 'primary'
+      ? 'bg-figma-orangeLight darkTheme:bg-figma-grayMedium'
+      : 'bg-background';
 
   return (
     <div
-      className={`h-40 p-2.5 flex-col justify-start items-start flex gap-y-4 ${containerStyle} w-80 rounded-2xl`}>
+      className={`h-40 p-6 flex-col justify-start items-start flex gap-y-4 ${containerStyle} w-80 rounded-2xl`}>
       <div className='justify-start items-center gap-2.5 inline-flex'>
         {icon}
         <span

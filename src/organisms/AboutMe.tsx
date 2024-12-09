@@ -3,6 +3,7 @@ import React from 'react';
 import { PageSubtitle } from '../atoms/pageSubtitle';
 import { AboutMeCard } from '../atoms/aboutMeCard';
 import CodeIcon from '../assets/icons/aboutme/code.svg?react';
+import UIUXIcon from '../assets/icons/aboutme/ui.svg?react';
 
 export const AboutMe = () => {
   const cards = [
@@ -22,7 +23,7 @@ export const AboutMe = () => {
       title: 'UI/UX Design',
       description:
         'I create intuitive and engaging user experiences with a focus on usability and aesthetics.',
-      icon: <CodeIcon />,
+      icon: <UIUXIcon />,
     },
     {
       title: 'DevOps',
