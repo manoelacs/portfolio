@@ -4,6 +4,7 @@ import EmailIcon from '../assets/icons/contact/e-mail.svg?react';
 import PhoneIcon from '../assets/icons/contact/phone.svg?react';
 import { InputField, TextField } from '../atoms/inputField';
 import { ContactCard } from '../atoms/contactCard';
+import Button from '../atoms/button';
 
 export const Contact = () => {
   return (
@@ -49,12 +50,14 @@ export const Contact = () => {
             required
           />
 
-          <button
-            type='submit'
-            className='h-10 w-24 px-7 py-2.5 rounded-2xl border border-figma-orange 
-            justify-center items-center gap-2.5 inline-flex text-foreground text-xs font-semibold font-raleway leading-tight'>
-            Submit
-          </button>
+          <Button
+            className='w-32'
+            label='Submit'
+            onClick={() => {
+              throw new Error('Function not implemented.');
+            }}
+            variant='solid'
+          />
         </form>
       </div>
     </div>
