@@ -40,12 +40,20 @@ export const Hero = () => {
             icon={<LocationIcon />}
           />
           <div className='inline-flex w-full justify-center items-center'>
+            {/*  <Button
+              icon={<DownloadIcon />}
+              label={'Download  Resume'}
+              onClick={function (): void {
+                throw new Error('Function not implemented.');
+              }}
+            /> */}
             <Button
               icon={<DownloadIcon />}
               label={'Download  Resume'}
               onClick={function (): void {
                 throw new Error('Function not implemented.');
               }}
+              variant='gradient'
             />
           </div>
         </div>
