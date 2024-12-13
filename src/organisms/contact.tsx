@@ -20,7 +20,7 @@ export const Contact = () => {
         />
         <ContactCard
           title='Email'
-          content={'aleonamaissac@hotmailcom'}
+          content={'aleonamaissac@hotmail.com'}
           icon={<EmailIcon />}
           type={'secondary'}
         />
