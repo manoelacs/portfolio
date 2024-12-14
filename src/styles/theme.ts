@@ -16,7 +16,7 @@ const figmaLightColors: tFigmaColors = {
 
 const figmaDarkColors: tFigmaColors = {
   orange: '#ff9c1b', // Accent color remains consistent
-  orangeLight: '#FFEBD1', // Lighter accent color
+  orangeLight: '#4A3B2F', // Lighter accent color
   red: '#ec1b09', // Destructive action color remains
   redOrange: '#e80505', // Alerts or warnings
 

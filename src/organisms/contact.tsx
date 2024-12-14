@@ -1,4 +1,3 @@
-import { PageTitle } from '../atoms/pageTitle';
 import React from 'react';
 import EmailIcon from '../assets/icons/contact/e-mail.svg?react';
 import PhoneIcon from '../assets/icons/contact/phone.svg?react';
@@ -9,8 +8,6 @@ import Button from '../atoms/button';
 export const Contact = () => {
   return (
     <div className=' flex flex-col items-center justify-center gap-y-8 w-[694px]'>
-      <PageTitle title='Contact' />
-
       <div className='flex flex-row justify-between w-full'>
         <ContactCard
           title='Phone'

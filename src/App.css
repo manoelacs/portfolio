@@ -7,9 +7,27 @@
   background-color: #f2f5f9;
   display: flex;
   justify-content: center;
+  ::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #f2f5f9;
+    border-radius: 8px;
+  }
 }
 .darkTheme {
   #root {
     background-color: #1a1a1a;
+    ::-webkit-scrollbar-thumb {
+      background: #1a1a1a;
+      opacity: 0.5;
+    }
   }
+}
+
+.grid-portfolio {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-rows: masonry;
 }

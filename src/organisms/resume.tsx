@@ -1,5 +1,4 @@
 import React from 'react';
-import { PageTitle } from '../atoms/pageTitle';
 import { PageSubtitle } from '../atoms/pageSubtitle';
 import { Tag } from '../atoms/tag';
 import { ResumeCard } from '../atoms/resumeCard';
@@ -76,7 +75,6 @@ export const Resume = () => {
   return (
     <>
       <div className='flex flex-col gap-y-6 pt-10 h-[60%] pl-[72px]'>
-        <PageTitle title='Resume' />
         <div className='w-full flex-wrap flex gap-x-10 '>
           <div className='flex flex-col gap-y-4 w-fit'>
             <div className='inline-flex gap-x-2 items-center'>
