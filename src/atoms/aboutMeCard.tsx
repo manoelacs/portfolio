@@ -12,9 +12,7 @@ export const AboutMeCard = ({
   icon: JSX.Element;
 }) => {
   const containerStyle =
-    style === 'primary'
-      ? 'bg-figma-orangeLight darkTheme:bg-figma-grayMedium'
-      : 'bg-background';
+    style === 'primary' ? 'bg-figma-orangeLight' : 'bg-background';
 
   return (
     <div

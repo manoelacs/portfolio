@@ -15,7 +15,6 @@ export const ContactCard: React.FC<ContactCardProps> = ({
 }) => {
   const typeClass =
     type === 'primary' ? 'bg-figma-orangeLight text-black' : 'bg-muted';
-  const textColor = type === 'primary' ? 'text-black' : 'text-foreground';
 
   return (
     <div
@@ -23,12 +22,12 @@ export const ContactCard: React.FC<ContactCardProps> = ({
       <div className='inline-flex gap-x-2 w-full items-center h-fit'>
         {icon}
         <span
-          className={`${textColor} text-base font-medium font-['Poppins'] leading-10 tracking-tight`}>
+          className={`text-foreground text-base font-medium font-['Poppins'] leading-10 tracking-tight`}>
           {title}
         </span>
       </div>
       <span
-        className={`${textColor}/90 text-sm font-medium font-['Poppins'] tracking-tight w-fit ml-4`}>
+        className={`text-foreground/90 text-sm font-medium font-['Poppins'] tracking-tight w-fit ml-4`}>
         {content}
       </span>
     </div>

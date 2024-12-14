@@ -1,4 +1,3 @@
-import { PageTitle } from '../atoms/pageTitle';
 import React from 'react';
 import { PageSubtitle } from '../atoms/pageSubtitle';
 import { AboutMeCard } from '../atoms/aboutMeCard';
@@ -42,7 +41,6 @@ export const AboutMe = () => {
 
   return (
     <div className='w-full h-full items-center justify-center flex flex-col gap-y-4 px-10'>
-      <PageTitle title='About Me' />
       <div className="text-foreground text-base font-medium font-['Raleway'] leading-loose text-justify w-full">
         Hello there! I'm thrilled to welcome you to my portfolio. I am a
         passionate and versatile
