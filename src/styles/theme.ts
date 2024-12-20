@@ -27,8 +27,9 @@ const figmaDarkColors: tFigmaColors = {
   grayLight: '#2d2f33', // Background for cards and sections
   grayMedium: '#3c3f44', // Borders and input backgrounds
 
-  background: '#1a1c1e', // Main background color (dark gray)
+  background: '#1a1a1a', // Main background color (dark gray)
 };
+//'#1a1c1e', // Main background color (dark gray)
 
 const generateTheme = (colors: tFigmaColors) => ({
   figma: {

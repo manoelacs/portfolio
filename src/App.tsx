@@ -1,18 +1,10 @@
 import React from 'react';
+import { RouterProvider } from 'react-router-dom';
+import router from './router';
 import './App.css';
-import Header from './molecules/header';
-
-import { Footer } from './atoms/footer';
-import { PageLayout } from './organisms/pageLayout';
 
 const App: React.FC = () => {
-  return (
-    <div className='flex flex-col items-center h-full gap-y-4 w-[1230px] bg-background'>
-      <Header />
-      <PageLayout />
-      <Footer />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;

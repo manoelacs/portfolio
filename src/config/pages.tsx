@@ -21,7 +21,7 @@ export const Router: Record<Pages, JSX.Element> = {
   Portfolio: <Portfolio />,
 };
 
-export const pagpes: Record<Pages, pageProps> = {
+export const pages: Record<Pages, pageProps> = {
   Home: {
     title: 'About Me',
     icon: <HomeIcon />,

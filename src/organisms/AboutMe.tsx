@@ -3,14 +3,42 @@ import { PageSubtitle } from '../atoms/pageSubtitle';
 import { AboutMeCard } from '../atoms/aboutMeCard';
 import CodeIcon from '../assets/icons/aboutme/code.svg?react';
 import UIUXIcon from '../assets/icons/aboutme/ui.svg?react';
+import myResume from '../config/myResume.json';
+
+import { PageLayout } from './pageLayout';
+
+const mapIconsToTitle: { [key: string]: JSX.Element } = {
+  'Frontend Development': <CodeIcon />,
+  'Backend Development': <CodeIcon />,
+  'UI/UX Design': <UIUXIcon />,
+  DevOps: <CodeIcon />,
+  'Flutter Development': <CodeIcon />,
+  'React Development': <CodeIcon />,
+};
 
 export const AboutMe = () => {
-  const cards = [
+  const { aboutMe } = myResume;
+
+  const renderCards = () => {
+    return aboutMe.whatIDo.map((card, index) => {
+      const style = index === 0 || index === 3 ? 'primary' : 'secondary';
+      return (
+        <AboutMeCard
+          key={index}
+          style={style}
+          {...card}
+          icon={mapIconsToTitle[card.title]}
+        />
+      );
+    });
+  };
+
+  /* const cards = [
     {
       title: 'Frontend Development',
       description:
         'I specialize in creating visually appealing and user-friendly interfaces using modern frontend technologies like React, Angular, and Vue.',
-      icon: <CodeIcon />,
+      icon: mapIconsToTitle['Frontend Development'],
     },
     {
       title: 'Backend Development',
@@ -30,32 +58,26 @@ export const AboutMe = () => {
         'I ensure smooth deployment and operation of applications with a focus on automation and monitoring.',
       icon: <CodeIcon />,
     },
-  ];
+  ]; */
 
-  const renderCards = () => {
+  /* const renderCards = () => {
     return cards.map((card, index) => {
       const style = index === 0 || index === 3 ? 'primary' : 'secondary';
       return <AboutMeCard key={index} style={style} {...card} />;
     });
-  };
+  }; */
 
   return (
-    <div className='w-full h-full items-center justify-center flex flex-col gap-y-4 px-10'>
-      <div className="text-foreground text-base font-medium font-['Raleway'] leading-loose text-justify w-full">
-        Hello there! I'm thrilled to welcome you to my portfolio. I am a
-        passionate and versatile
-        <br />
-        full-stack developer with a keen interest in exploring the latest
-        cutting-edge technologies.
-        <br />
-        My journey in the world of web development has been nothing short of
-        exhilarating, and <br />I constantly strive to enhance my skills and
-        embrace emerging trends in the industry.
+    <PageLayout pageTitle='About Me'>
+      <div className='w-full h-full items-center justify-center flex flex-col gap-y-4 px-10'>
+        <div className="text-foreground text-base font-medium font-['Raleway'] leading-loose text-justify w-full">
+          {aboutMe.description}
+        </div>
+        <PageSubtitle subtitle={aboutMe.whatIDoTitle} />
+        <div className='grid grid-cols-2 md:grid-cols-2 gap-4 w-[660px]'>
+          {renderCards()}
+        </div>
       </div>
-      <PageSubtitle subtitle='What I do!' />
-      <div className='grid grid-cols-2 md:grid-cols-2 gap-4 w-[660px]'>
-        {renderCards()}
-      </div>
-    </div>
+    </PageLayout>
   );
 };
