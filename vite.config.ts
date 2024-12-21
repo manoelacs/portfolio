@@ -7,7 +7,7 @@ const { VITE_PORT } = loadEnv('development', process.cwd());
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/portfolio/',
+  base: '/',
   plugins: [react(), svgr()],
   resolve: {
     alias: {
