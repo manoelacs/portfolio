@@ -1,0 +1,203 @@
+{
+  "info": {
+    "name": "Manoela C. Dos Santos",
+    "profession": "Front-end Developer",
+    "email": "aleonamaissac@gmail.com",
+    "phone": "+55 11 99999-9999",
+    "location": "São Paulo, Brazil"
+  },
+
+  "resume": {
+    "experienceTitle": "Experience",
+    "educationTitle": "Education",
+    "experience": [
+      {
+        "title": "Front-end Developer",
+        "company": "Purple Metrics",
+        "location": "São Paulo, Brazil",
+        "date": "2017 - 2018",
+        "description": "Planned and implemented new product features, optimized workflows, improved accessibility, and conducted code reviews for quality assurance.",
+        "industry": "Data Analytics",
+        "project": "Development and enhancement of a data-driven analytics platform.",
+        "technologies": [
+          "ReactJS",
+          "TypeScript",
+          "CSS",
+          "HTML5",
+          "SASS",
+          "React-query",
+          "JestJS",
+          "Playwright",
+          "ConfigCat",
+          "Git",
+          "CircleCI",
+          "Kanban"
+        ]
+      },
+      {
+        "title": "Front-end Developer",
+        "company": "Slide Box Apresentações LTDA",
+        "location": "São Paulo, Brazil",
+        "date": "2016 - 2017",
+        "description": "Spearheaded the development using Gatsby, integrated Ant Design components, and ensured responsive design for both desktop and mobile.",
+        "industry": "Presentation Tools",
+        "project": "Creation of a modern, highly customizable platform for interactive presentations.",
+        "technologies": [
+          "ReactJS",
+          "JavaScript",
+          "TypeScript",
+          "Redux",
+          "RxJS",
+          "LESS",
+          "SASS",
+          "Styled-components",
+          "Git",
+          "Scrum"
+        ]
+      },
+      {
+        "title": "Front-end Developer",
+        "company": "Innovations Center - EDGE",
+        "location": "São Paulo, Brazil",
+        "date": "2015 - 2016",
+        "description": "Defined product specifications, collaborated in cross-functional teams, and implemented responsive front-end components using Ant Design and Context API.",
+        "industry": "EdTech",
+        "project": "Development of a digital product for educational content delivery.",
+        "technologies": [
+          "ReactJS",
+          "TypeScript",
+          "CSS",
+          "HTML5",
+          "Ant Design",
+          "Context API",
+          "Styled-components",
+          "Scrum"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor in Computer Science",
+        "institution": "Federal University of Alagoas",
+        "year": "2021"
+      }
+    ],
+    "softSkills": {
+      "title": "Soft Skills",
+      "skills": [
+        "Problem Solving",
+        "Teamwork",
+        "Communication",
+        "Time Management"
+      ]
+    },
+    "technicalSkills": {
+      "title": "Work Skills",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Express",
+        "Flutter"
+      ]
+    }
+  },
+
+  "aboutMe": {
+    "description": "I am a Front-end Developer with a passion for creating beautiful and user-friendly websites. I have experience in HTML, CSS, JavaScript, and React. I am always eager to learn new technologies and improve my skills.",
+    "whatIDoTitle": "What I Do",
+    "whatIDo": [
+      {
+        "title": "Frontend Development",
+        "description": "Specializing in creating responsive and user-friendly websites using HTML, CSS, and JavaScript."
+      },
+      {
+        "title": "React Development",
+        "description": "Experienced in building dynamic web applications using React and Redux."
+      },
+      {
+        "title": "Backend Development",
+        "description": "Building server-side applications using Node.js and Express."
+      },
+      {
+        "title": "Flutter Development",
+        "description": "Building cross-platform mobile applications using Flutter."
+      }
+    ],
+    "skillsTitle": "Skills"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "Feel free to reach out to me if you have any questions or would like to collaborate on a project.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send"
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "Check out some of my recent projects.",
+    "items": [
+      {
+        "title": "E-commerce Platform",
+        "category": "Web Development",
+        "imageUrl": "src/assets/images/ecommerce.png"
+      }
+    ],
+
+    "projects": [
+      {
+        "title": "Purple Metrics",
+        "description": "A data-driven analytics platform for businesses.",
+        "technologies": [
+          "ReactJS",
+          "TypeScript",
+          "CSS",
+          "HTML5",
+          "SASS",
+          "React-query",
+          "JestJS",
+          "Playwright",
+          "ConfigCat",
+          "Git",
+          "CircleCI",
+          "Kanban"
+        ]
+      },
+      {
+        "title": "Slide Box",
+        "description": "A modern platform for interactive presentations.",
+        "technologies": [
+          "ReactJS",
+          "JavaScript",
+          "TypeScript",
+          "Redux",
+          "RxJS",
+          "LESS",
+          "SASS",
+          "Styled-components",
+          "Git",
+          "Scrum"
+        ]
+      },
+      {
+        "title": "EDGE",
+        "description": "A digital product for educational content delivery.",
+        "technologies": [
+          "ReactJS",
+          "TypeScript",
+          "CSS",
+          "HTML5",
+          "Ant Design",
+          "Context API",
+          "Styled-components",
+          "Scrum"
+        ]
+      }
+    ]
+  }
+}

@@ -1,20 +1,27 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "es2016",
+    "lib": [
+      "dom",
+      "es2016"
+    ],
     "jsx": "react",
     "module": "ESNext",
     "moduleResolution": "Node",
     "baseUrl": "./",
     "paths": {
-      "@components/*": [
-        "src/components/*"
+      "@atoms/*": [
+        "src/atoms/*"
       ],
       "@styles/*": [
         "src/styles/*"
       ],
       "@static/*": [
         "src/static/*"
-      ]
+      ],
+      "@src/*": [
+        "src/*"
+      ], // Add this line
     },
     "allowJs": true,
     "skipLibCheck": true,
