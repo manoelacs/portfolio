@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { MenuItem } from '../atoms/menuItem';
 
@@ -8,12 +8,22 @@ import { useLocation, useNavigate } from 'react-router-dom';
 export const Menu = () => {
   const location = useLocation();
   const navigate = useNavigate();
-
-  const activeItem = location.pathname.split('/')[2] as Pages; // Adjusted to match the new path structure
+  const [activeItem, setActiveItem] = useState<Pages | null>(null);
 
   const handleMenuItemClick = (page: Pages) => {
-    navigate(`/portfolio/${page}`);
+    setActiveItem(page);
+    navigate(`/${page}`);
   };
+
+  useEffect(() => {
+    const path = location.pathname.split('/')[1] as Pages;
+    if (pagesNames.includes(path)) {
+      setActiveItem(path);
+    } else {
+      setActiveItem('Home');
+      navigate(`/home`);
+    }
+  }, [location.pathname, navigate]);
 
   return (
     <div className='w-fit h-fit bg-m rounded-2xl shadow flex flex-row gap-x-4 cursor-pointer items-center p-4 darkTheme:bg-figma-grayLight'>
