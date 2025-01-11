@@ -8,12 +8,12 @@ export const MenuItem = ({ title, icon, onClick, isActive }: MenuItemProps) => {
     'text-white group-hover:text-white text-xs font-semibold font-raleway leading-tight';
 
   const activeItem =
-    'bg-gradient-to-r from-figma-orange to-figma-redOrange [&_path]:fill-white text-white';
+    'bg-gradient-to-r from-figma-orange to-figma-redOrange [&_path]:fill-white text-white ';
 
   const inactiveItem =
-    'bg-primary hover:bg-secondary hover:text-foreground  [&_path]:fill-foreground ';
+    'xl:bg-primary hover:bg-secondary hover:text-foreground  [&_path]:fill-foreground ';
 
-  const containerClassName = `w-20 [&_path]:fill-opacity-1 h-20 rounded-2xl flex flex-col p-4 
+  const containerClassName = `w-16 [&_path]:fill-opacity-1 h-18 rounded-2xl flex flex-col p-1 md:w-20 xl:h-20 xl:p-4
   gap-y-1 items-center justify-center group transition-transform transform hover:scale-105
         ${isActive ? activeItem : inactiveItem}`;
 

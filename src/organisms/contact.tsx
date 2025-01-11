@@ -13,8 +13,8 @@ export const Contact = () => {
 
   return (
     <PageLayout pageTitle='About Me'>
-      <div className=' flex flex-col items-center justify-center gap-y-8 w-[694px] pt-10'>
-        <div className='flex flex-row justify-between w-full'>
+      <div className=' flex flex-col items-center justify-center gap-y-8  pt-10'>
+        <div className='flex flex-col xl:flex-row justify-between w-full'>
           <ContactCard
             title='Phone'
             content={info.phone}
@@ -28,7 +28,7 @@ export const Contact = () => {
             type={'secondary'}
           />
         </div>
-        <div className=' h-96 bg-muted rounded-2xl w-[694px] py-8 px-12'>
+        <div className=' xl:h-96 w-fit h-fit bg-muted rounded-2xl xl:w-[694px] py-8 px-12'>
           <p className="text-foreground text-base font-normal font-['Raleway'] leading-loose tracking-tight text-justify">
             {contact.description}
           </p>

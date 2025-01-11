@@ -15,7 +15,7 @@ export const PortfolioCard = ({
   type,
   link,
 }: PortfolioCardProps) => {
-  const cardHeight = type === 'compact' ? 'h-48 w-72' : 'h-48 w-92';
+  const cardHeight = type === 'compact' ? 'h-48 xl:w-72 w-fit' : 'h-48 w-92';
 
   return (
     <div

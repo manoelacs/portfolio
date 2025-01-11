@@ -9,50 +9,48 @@ import Button from '../atoms/button';
 import { SocialMedia } from './socialMedia';
 import myResume from '../config/myResume.json';
 import profileImage from '../assets/images/profile-image.jpg';
+import ProfileImage from '@src/atoms/profileImage';
 
 export const Hero = () => {
   const { info } = myResume;
 
+  const NameAndProfession = (
+    <div className=' text-center'>
+      <div className="text-foreground text-xl lg:text-3xl font-bold font-['Raleway'] leading-7 lg:leading-9">
+        {info.name}
+      </div>
+      <div className="text-foreground/60 text-xs lg:text-base font-medium font-['Raleway'] leading-8 lg:leading-10">
+        {info.profession}
+      </div>
+    </div>
+  );
+
   return (
-    <div className='w-96 relative h-[700px] bg-primary rounded-2xl shadow px-6'>
-      <img
-        className='w-48 h-48 left-[92px] top-[-80px] absolute rounded-2xl shadow'
-        src={profileImage}
-        alt='profile'
-        
-      />
+    <div className='w-full flex flex-col xl:w-96 lg:relative items-center lg:items-center lg:h-[700px] bg-primary rounded-2xl shadow px-6 py-8 '>
+      <ProfileImage src={profileImage} alt='profile' />
 
-      <div className='pt-[60px]'>
-        <div className='mt-24 text-center'>
-          <div className="text-foreground text-3xl font-bold font-['Raleway'] leading-9">
-            {info.name}
-          </div>
-          <div className="text-foreground/60 text-base font-medium font-['Raleway'] leading-10">
-            {info.profession}
-          </div>
-        </div>
+      <div className='lg:pt-[95px] pt-0  flex flex-col items-center'>
+        {NameAndProfession}
         <SocialMedia />
+      </div>
 
-        <div className='mt-8 w-full flex flex-col gap-4 px-8 py-4  justify-start rounded-2xl bg-background'>
-          <Info title='Phone' content={info.phone} icon={<PhoneIcon />} />
-          <Info title='Email' content={info.email} icon={<EmailIcon />} />
-          <Info
-            title='Location'
-            content={info.location}
-            icon={<LocationIcon />}
-          />
-          <div className='inline-flex w-full justify-center items-center'>
-            <Button
-              icon={<DownloadIcon />}
-              label={'Download  Resume'}
-              onClick={function (): void {
-                throw new Error('Function not implemented.');
-              }}
-              variant='gradient'
-            />
-          </div>
-        </div>
+      <div className='mt-8 flex flex-col lg:items-center items-start  gap-4 p-0 lg:p-6 justify-start rounded-2xl bg-background'>
+        <Info title={'Phone'} icon={<PhoneIcon />} content={info.phone} />
+        <Info title='Email' icon={<EmailIcon />} content={info.email} />
+        <Info
+          title='Location'
+          icon={<LocationIcon />}
+          content={info.location}
+        />
+        <Button
+          label='Download Resume'
+          icon={<DownloadIcon />}
+          onClick={() => window.open(info.resume, '_blank')}
+          variant='solid'
+        />
       </div>
     </div>
   );
 };
+
+export default Hero;

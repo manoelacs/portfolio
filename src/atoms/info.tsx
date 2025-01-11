@@ -1,4 +1,5 @@
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 interface InfoProps {
   title: string;
@@ -7,20 +8,19 @@ interface InfoProps {
 }
 
 const Info: React.FC<InfoProps> = ({ title, content, icon }) => {
+  const isMobile = useMediaQuery({ maxWidth: 1024 });
+
   return (
     <div className='w-full h-16 justify-start items-center gap-2.5 inline-flex border-b border-[#e3e3e3]'>
-      <div className='p-2.5  rounded-lg justify-start items-start gap-1 flex'>
-        <div className='px-1.5 py-0.5 rounded-lg justify-start items-start gap-2.5 flex'>
-          {icon}
-        </div>
-      </div>
-      <div className='py-1 flex-col justify-start items-start inline-flex'>
-        <div className='h-3.5 justify-center items-center inline-flex'>
-          <div className="text-foreground/50 text-sm font-semibold font-['Raleway']">
+      {icon}
+      <div className='flex-col justify-center items-start inline-flex'>
+        {isMobile ? null : (
+          <div className='text-foreground/50 text-sm font-semibold font-raleway'>
             {title}
           </div>
-        </div>
-        <div className="text-foreground text-sm font-semibold font-['Raleway'] leading-tight">
+        )}
+
+        <div className='text-foreground text-sm font-semibold font-raleway leading-tight w-fit '>
           {content}
         </div>
       </div>

@@ -6,7 +6,7 @@ export const PageTitle = ({ title }: { title: string }) => {
       <span className="text-foreground text-4xl font-medium font-['Poppins'] leading-10 tracking-wide uppercase">
         {title}
       </span>
-      <div className='w-[252px] h-[3px] bg-gradient-to-r from-figma-orange to-figma-redOrange' />
+      <div className='xl:w-[252px] h-[3px] bg-gradient-to-r from-figma-orange to-figma-redOrange' />
     </div>
   );
 };
