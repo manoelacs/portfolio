@@ -10,7 +10,7 @@ export const ThemeButton: React.FC = () => {
 
   return (
     <div
-      className='w-14 h-14 p-2.5 cursor-pointer rounded-3xl shadow flex-col justify-center items-center gap-2.5 inline-flex'
+      className='w-14 h-14  p-2.5 cursor-pointer rounded-3xl xl:shadown flex-col justify-center items-center gap-2.5 inline-flex'
       onClick={toggleTheme}>
       {themeIcon}
     </div>

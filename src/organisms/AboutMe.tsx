@@ -35,8 +35,8 @@ export const AboutMe = () => {
 
   return (
     <PageLayout pageTitle='About Me'>
-      <div className='w-full h-full  flex flex-col gap-y-4 px-10 xl:items-center xl:justify-center'>
-        <div className="text-foreground text-base font-medium font-['Raleway'] leading-loose text-justify w-full">
+      <div className='w-full h-full  flex flex-col gap-y-4   md:px-10 xl:items-center xl:justify-center'>
+        <div className="text-foreground tx-sm md:text-base font-medium font-['Raleway'] leading-loose text-justify w-full">
           {aboutMe.description}
         </div>
         <PageSubtitle subtitle={aboutMe.whatIDoTitle} />

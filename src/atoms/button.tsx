@@ -6,6 +6,7 @@ interface ButtonProps {
   onClick: () => void;
   variant?: 'gradient' | 'solid';
   className?: string;
+  isMobile?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -14,9 +15,10 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   variant = 'solid',
   className,
+  isMobile,
 }) => {
   const baseClasses =
-    'h-11 w-[185px] px-5 py-2.5 justify-center items-center rounded-2xl inline-flex gap-2.5 cursor-pointer transition-transform transform hover:scale-105';
+    'h-11 w-fit px-5 py-2.5 justify-center items-center rounded-2xl inline-flex gap-2.5 cursor-pointer transition-transform transform hover:scale-105';
   const gradientClasses =
     'bg-gradient-to-r from-[#ff9c1a] to-[#e80505] hover:from-[#e80505] hover:to-[#ff9c1a] text-[#f2f7fc]';
   const solidClasses =
@@ -26,6 +28,20 @@ const Button: React.FC<ButtonProps> = ({
     variant === 'gradient'
       ? `${baseClasses} ${gradientClasses}`
       : `${baseClasses} ${solidClasses}`;
+
+  if (isMobile) {
+    return (
+      <button className={`${classes} ${className}`} onClick={onClick}>
+        {icon && <div className='icon'>{icon}</div>}
+
+        {!icon && (
+          <div className="text-xs font-semibold font-['Raleway'] leading-tight">
+            {label}
+          </div>
+        )}
+      </button>
+    );
+  }
 
   return (
     <button className={`${classes} ${className}`} onClick={onClick}>

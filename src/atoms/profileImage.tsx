@@ -3,12 +3,13 @@ import React from 'react';
 interface ProfileImageProps {
   src: string;
   alt: string;
+  className?: string;
 }
 
-const ProfileImage: React.FC<ProfileImageProps> = ({ src, alt }) => {
+const ProfileImage: React.FC<ProfileImageProps> = ({ src, alt, className }) => {
   return (
     <img
-      className='w-32 h-32 md:w-48 md:h-48 left-1/2 transform -translate-x-1/2  md:top-[-95px] absolute rounded-2xl shadow'
+      className={` ${className} rounded-full w-32 h-32 lg:w-40 lg:h-40 object-cover `}
       src={src}
       alt={alt}
     />

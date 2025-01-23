@@ -58,7 +58,7 @@ export const Contact = () => {
             />
 
             <Button
-              className='w-32'
+              className='w-32 '
               label='Submit'
               onClick={() => {
                 throw new Error('Function not implemented.');
