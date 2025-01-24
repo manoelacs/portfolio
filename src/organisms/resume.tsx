@@ -42,9 +42,9 @@ export const Resume = () => {
 
   return (
     <PageLayout pageTitle='Resume'>
-      <div className=''>
+      <div className=' '>
         <div className='flex flex-col gap-y-6 pt-10 h-[70%] xl:pl-[72px] pb-4 xl:pb-0'>
-          <div className='w-full xl:flex-wrap flex flex-col gap-x-10 '>
+          <div className='w-full xl:flex-wrap flex flex-col xl:flex-row  gap-x-10 '>
             <div className='flex flex-col gap-y-4 w-full xl:w-fit'>
               <div className='inline-flex gap-x-2 items-center'>
                 <EducationIcon />
@@ -63,7 +63,7 @@ export const Resume = () => {
             </div>
           </div>
         </div>
-        <div className='h-[30%] bg-background/50  flex-row  w-full flex-wrap flex gap-x-10 pl-[72px] pb-4 xl:pb-0'>
+        <div className='h-[30%]  bg-background/50 xl:mt-5 xl:pt-5  flex-row  w-full flex-wrap flex gap-x-10 pl-[72px] pb-4 xl:-pb-4'>
           <div className='flex flex-col gap-4 w-[288px] '>
             <PageSubtitle subtitle={resume.technicalSkills.title} />
             <div className=' flex flex-wrap gap-4 w-full'>

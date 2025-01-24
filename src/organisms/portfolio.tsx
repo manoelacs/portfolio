@@ -46,7 +46,7 @@ export const Portfolio = () => {
             </div>
           ))}
         </div>
-        <div className='grid grid-cols-1  xl:grid-cols-2  gap-8 w-full h-[500px] overflow-y-scroll'>
+        <div className='grid grid-cols-1  xl:grid-cols-2  gap-8 w-full h-fit xl:h-[500px] overflow-y-scroll'>
           {portfolios.map((item, index) => (
             <PortfolioCard
               key={index}
