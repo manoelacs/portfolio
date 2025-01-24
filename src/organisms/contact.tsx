@@ -14,7 +14,7 @@ export const Contact = () => {
   return (
     <PageLayout pageTitle='About Me'>
       <div className=' flex flex-col items-center justify-center gap-y-8  pt-10'>
-        <div className='flex flex-col xl:flex-row justify-between w-full'>
+        <div className='flex flex-col xl:flex-row justify-between w-full gap-y-4 xl:gap-0 '>
           <ContactCard
             title='Phone'
             content={info.phone}
@@ -28,8 +28,8 @@ export const Contact = () => {
             type={'secondary'}
           />
         </div>
-        <div className=' xl:h-96 w-fit h-fit bg-muted rounded-2xl xl:w-[694px] py-8 px-12'>
-          <p className="text-foreground text-base font-normal font-['Raleway'] leading-loose tracking-tight text-justify">
+        <div className='xl:h-96 w-fit h-fit bg-muted rounded-2xl xl:w-[694px] py-8 xl:px-12 px-4'>
+          <p className="text-foreground text-md xl:text-base font-normal font-['Raleway'] leading-loose tracking-tight text-justify">
             {contact.description}
           </p>
           <form className='flex flex-col gap-4 pt-4 items-center'>

@@ -19,7 +19,7 @@ export const PortfolioCard = ({
 
   return (
     <div
-      className={` bg-figma-orangeLight rounded-lg p-2 flex flex-col 
+      className={`bg-figma-orangeLight rounded-lg p-2 flex flex-col  w-full
       items-start justify-between ${cardHeight} shadow-md`}>
       <a href={link} className={`w-full h-full {link? 'cursor-pointer' : ''}`}>
         <img className='w-full h-32 rounded-lg' src={imageUrl} alt={title} />

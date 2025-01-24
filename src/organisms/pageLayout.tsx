@@ -11,7 +11,7 @@ export const PageLayout = ({
 }) => {
   return (
     <div
-      className={`w-full h-fit xl:w-[820px] xl:h-[700px] bg-primary rounded-2xl shadow xl:p-8 px-3`}>
+      className={`w-full h-fit xl:w-[820px] xl:h-[700px] bg-primary rounded-2xl shadow xl:p-8 px-3 py-4`}>
       <PageTitle title={pageTitle} />
       {children}
     </div>
