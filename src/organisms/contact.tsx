@@ -14,7 +14,7 @@ export const Contact = () => {
   return (
     <PageLayout pageTitle='About Me'>
       <div className=' flex flex-col items-center justify-center gap-y-8  pt-10'>
-        <div className='flex flex-col xl:flex-row justify-between w-full gap-y-4 xl:gap-0 '>
+        <div className='flex flex-col xl:flex-row justify-between w-full gap-y-4 xl:gap-0 xl:w-[694px] '>
           <ContactCard
             title='Phone'
             content={info.phone}
