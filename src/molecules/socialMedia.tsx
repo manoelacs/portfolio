@@ -6,7 +6,7 @@ import LinkedInIcon from '../assets/icons/linkedin-icon.svg?react';
 export const SocialMedia: React.FC = () => {
   const classNameIconDarkTheme = 'darkTheme:[&_path]:fill-white';
   return (
-    <div className='inline-flex gap-3 items-center justify-center'>
+    <div className='inline-flex gap-2  xl:gap-3 items-center justify-center'>
       <SocialMediaButton
         icon={<LinkedInIcon className={classNameIconDarkTheme} />}
         url={'https://www.linkedin.com'}

@@ -18,7 +18,7 @@ export const ContactCard: React.FC<ContactCardProps> = ({
 
   return (
     <div
-      className={`w-[333px] h-36 rounded-2xl p-5 flex flex-col  ${typeClass}`}>
+      className={`xl:w-[333px] w-full h-36 rounded-2xl p-5 flex flex-col  ${typeClass}`}>
       <div className='inline-flex gap-x-2 w-full items-center h-fit'>
         {icon}
         <span

@@ -17,7 +17,7 @@ export const ResumeCard = ({
       : 'bg-figma-orangeLight/50 darkTheme:bg-figma-grayMedium/50';
   return (
     <div
-      className={`h-fit w-[288px] pl-6 py-2 flex-col justify-start items-start gap-2.5 inline-flex ${containerStyle} rounded-lg`}>
+      className={`h-fit md:w-[288px] w-full pl-6 py-2 flex-col justify-start items-start gap-2.5 inline-flex ${containerStyle} rounded-lg`}>
       <span className="text-foreground/50 text-sm font-normal font-['Raleway']">
         {date}
       </span>

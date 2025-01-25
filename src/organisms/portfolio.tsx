@@ -26,7 +26,7 @@ export const Portfolio = () => {
 
   return (
     <PageLayout pageTitle='Portfolio'>
-      <div className='flex flex-col items-center justify-center gap-y-8 w-full'>
+      <div className=' flex flex-col items-center justify-center gap-y-8   pt-10'>
         <div className='flex flex-row justify-end w-full gap-x-3'>
           <div
             className={`text-[#57657a] text-base font-medium font-['Poppins'] cursor-pointer hover:text-figma-orange ${
@@ -46,7 +46,7 @@ export const Portfolio = () => {
             </div>
           ))}
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-8 w-full h-[500px] overflow-y-scroll'>
+        <div className='grid grid-cols-1  xl:grid-cols-2  gap-8 w-full h-fit xl:h-[500px] overflow-y-scroll'>
           {portfolios.map((item, index) => (
             <PortfolioCard
               key={index}

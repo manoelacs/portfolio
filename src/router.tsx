@@ -44,17 +44,13 @@ const router = createBrowserRouter(
         },
         {
           path: '*',
-          element: Router.Home,
-        },
-        {
-          path: '*',
-          element: <Navigate to='/portfolio/home' replace />,
+          element: <NotFound />,
         },
       ],
     },
     {
       path: '*',
-      element: <NotFound />,
+      element: <Navigate to='/portfolio/home' replace />,
     },
   ],
   {
