@@ -1,4 +1,5 @@
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 interface InfoProps {
   title: string;
@@ -7,25 +8,40 @@ interface InfoProps {
 }
 
 const Info: React.FC<InfoProps> = ({ title, content, icon }) => {
-  return (
-    <div className='w-full h-16 justify-start items-center gap-2.5 inline-flex border-b border-[#e3e3e3]'>
-      <div className='p-2.5  rounded-lg justify-start items-start gap-1 flex'>
-        <div className='px-1.5 py-0.5 rounded-lg justify-start items-start gap-2.5 flex'>
-          {icon}
-        </div>
+  const isMobile = useMediaQuery({ maxWidth: 1024 });
+
+  const InfoMobile = (
+    <div className='w-full h-fit justify-start items-center gap-x-2.5 inline-flex '>
+      <div className='h-fit w-5 inline-flex justify-center items-center'>
+        {icon}
       </div>
-      <div className='py-1 flex-col justify-start items-start inline-flex'>
-        <div className='h-3.5 justify-center items-center inline-flex'>
-          <div className="text-foreground/50 text-sm font-semibold font-['Raleway']">
-            {title}
-          </div>
-        </div>
-        <div className="text-foreground text-sm font-semibold font-['Raleway'] leading-tight">
+
+      <div className='flex-col justify-center items-start inline-flex'>
+        <div className='text-foreground text-xs sm:text-sm font-semibold font-raleway leading-tight w-fit '>
           {content}
         </div>
       </div>
     </div>
   );
+
+  if (isMobile) {
+    return InfoMobile;
+  } else {
+    return (
+      <div className='w-full h-16 justify-start items-center gap-2.5 inline-flex border-b border-[#e3e3e3]'>
+        {icon}
+        <div className='flex-col justify-center items-start inline-flex'>
+          <div className='text-foreground/50 text-sm font-semibold font-raleway'>
+            {title}
+          </div>
+
+          <div className='text-foreground text-sm font-semibold font-raleway leading-tight w-fit '>
+            {content}
+          </div>
+        </div>
+      </div>
+    );
+  }
 };
 
 export default Info;

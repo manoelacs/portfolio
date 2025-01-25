@@ -16,11 +16,11 @@ export const AboutMeCard = ({
 
   return (
     <div
-      className={`h-40 p-6 flex-col justify-start items-start flex gap-y-4 ${containerStyle} w-80 rounded-2xl`}>
+      className={`h-40 p-6 flex-col justify-start items-start flex gap-y-4 ${containerStyle} w-full md:w-80 rounded-2xl`}>
       <div className='justify-start items-center gap-2.5 inline-flex'>
         {icon}
         <span
-          className={`text-foreground text-xl font-semibold font-['Poppins'] leading-tight`}>
+          className={`text-foreground md:text-xl font-semibold font-['Poppins'] leading-tight`}>
           {title}
         </span>
       </div>

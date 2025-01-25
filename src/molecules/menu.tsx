@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
 import { MenuItem } from '../atoms/menuItem';
-
 import { pages, Pages, pagesNames } from '@src/config/pages';
 import { useLocation, useNavigate } from 'react-router-dom';
 
@@ -26,14 +24,15 @@ export const Menu = () => {
   }, [location.pathname, navigate]);
 
   return (
-    <div className='w-fit h-fit bg-m rounded-2xl shadow flex flex-row gap-x-4 cursor-pointer items-center p-4 darkTheme:bg-figma-grayLight'>
+    <div className='w-full xl:w-fit h-fit rounded-2xl xl:shadow flex flex-row xl:gap-x-4 justify-evenly cursor-pointer items-center xl:p-4 xl:bg-figma-grayLight px-4 py-8 '>
       {pagesNames.map((page) => (
         <MenuItem
           key={page}
           title={page}
           icon={pages[page].icon}
           onClick={() => handleMenuItemClick(page)}
-          isActive={activeItem === page}
+          color={activeItem === page ? 'primary' : 'secondary'}
+          text={activeItem === page ? 'primary' : 'secondary'}
         />
       ))}
     </div>

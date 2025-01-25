@@ -15,11 +15,11 @@ export const PortfolioCard = ({
   type,
   link,
 }: PortfolioCardProps) => {
-  const cardHeight = type === 'compact' ? 'h-48 w-72' : 'h-48 w-92';
+  const cardHeight = type === 'compact' ? 'h-48 xl:w-72 w-fit' : 'h-48 w-92';
 
   return (
     <div
-      className={` bg-figma-orangeLight rounded-lg p-2 flex flex-col 
+      className={`bg-figma-orangeLight rounded-lg p-2 flex flex-col  w-full
       items-start justify-between ${cardHeight} shadow-md`}>
       <a href={link} className={`w-full h-full {link? 'cursor-pointer' : ''}`}>
         <img className='w-full h-32 rounded-lg' src={imageUrl} alt={title} />
